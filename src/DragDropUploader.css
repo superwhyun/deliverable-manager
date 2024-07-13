@@ -1,0 +1,127 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .deliverable-select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+.dropzone-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  gap: 20px; /* Add gap between dropzones */
+}
+
+.dropzone {
+  flex: 1; /* Changed from flex: 0 0 calc(50% - 10px) */
+  height: 200px;
+  border: 2px dashed #cccccc;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  }
+  
+  .dropzone:hover {
+    border-color: #666;
+  }
+  
+  .dropzone.file-selected {
+    border-color: #4CAF50;
+    background-color: rgba(76, 175, 80, 0.1);
+  }
+  
+  .dropzone p {
+    margin: 0;
+    font-size: 14px;
+    color: #666;
+    transition: opacity 0.3s ease;
+  }
+  
+  .file-selected p {
+    opacity: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    color: #4CAF50;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .file-selected .checkmark {
+    opacity: 1;
+  }
+  
+  .file-name {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    font-size: 12px;
+    color: #333;
+    word-break: break-all;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .file-selected .file-name {
+    opacity: 1;
+  }
+  
+  .upload-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    box-sizing: border-box; /* Ensure padding is included in width calculation */
+  }
+  
+  .upload-button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    margin-top: 20px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    width: 0;
+    height: 20px;
+    background-color: #4CAF50;
+    transition: width 0.3s ease;
+  }
