@@ -31,14 +31,9 @@ This project is a web application that allows users to upload deliverable-relate
    npm install
    ```
 
-3. Create a `.env` file in the root directory and add the following:
-   ```
-   PORT=3001
-   ```
+3. (Optional) If using Google Drive integration, place your Google Drive API credentials file in the root directory and name it `google-drive-credentials.json`.
 
-4. (Optional) If using Google Drive integration, place your Google Drive API credentials file in the root directory and name it `google-drive-credentials.json`.
-
-5. Start the development server:
+4. Start the development server:
    ```
    npm run dev
    ```
